@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  background-color: #dedede;
+  margin-top: 3em;
+}
+
+.board h1 {
+  text-align: center;
+  color: #f3a953;
+  font-size: 50px;
+  text-shadow: 3px 3px 2px #444;
+}
+
+.column-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.column {
+  background-color: #27aa80;
+  padding: 5%;
+  border-radius: 20px;
+  width: 30vw;
+  margin-bottom: 20%;
+  min-height: 25vh;
+  float: left;
+  position: relative;
+}
+
+.column-title {
+  text-align: center;
+  color: #f3a953;
+  margin: 0;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px #444;
+}
+
+.create-column {
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 18px;
+  min-width: 250px;
+  width: auto;
+  display: block;
+  margin: 35px auto;
+  border-radius: 10px;
+  text-shadow: 1px 1px 3px #444;
+  color: #fff;
+  background-color: #f3a953;
+  border: 2px solid #f3a953;
+  transition: ease-in-out .2s;
+  outline: 0;
+  text-decoration: none;
+}
+
+.create-column:hover, .create-column:active {
+  color: #f3a953;
+  background-color: #dedede;
+}
+
+li {
+  list-style: none;
+}
+
+.add-card {
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: 0;
+  display: block;
+  margin: 15px auto 25px;
+  color: white;
+  background-color: royalblue;
+  border: 2px solid yellow;
+  transition: .4s;
+}
+
+.card {
+  background-color: #19c790;
+  display: inline-block;
+  width: 80%;
+  min-height: 60px;
+  margin: 5%;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 3px solid #f3a953;
+  position: relative;
+}
+
+.card-description {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.btn-delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+  outline: 0;
+  transition: ease-in-out .2s;
+}
+
+.btn-delete:hover {
+  color: royalblue;
+  font-size: 20px;
+}
+
+.main {
+  top: 5px;
+  right: 5px;
+}
+
+ul {
+  -webkit-padding-start: inherit;
+          padding-inline-start: inherit;
+}
+
+@media (max-width: 600px) {
+  .column {
+    width: 45vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */
